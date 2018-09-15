@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,400");
+
+//define function
+@import "functions";
+
+//define mixin
+@import "mixins";
+
+//define extention=
+@import "extentions";
+
+body {
+    font-family: 'Raleway', sans-serif, Arial, Helvetica !important;
+    font-weight: 300;
+    line-height: 5;
+    user-select: none;
+
+    .main {
+        .mainHeader {
+            @extend %parallax;
+
+            .mainWrapper {
+                @extend %mainWrapper;
+
+                .mainNav {
+                    @include flex-box;
+
+                    @extend %layout-space;
+
+                    font-size: px-to-em(13);
+
+                    .navLogo {
+                        font-weight: 600;
+
+                        a {
+                            @include navBarLink;
+                        }
+                    }
+
+                    .navItems {
+                        @include flex-box;
+
+                        justify-content: flex-end;
+
+                        div {
+                            margin-left: px-to-em(25);
+
+                            a {
+                                @include navBarLink(white, #9a9a9a);
+                            }
+                        }
+                    }
+                }
+
+                .mainHeading {
+                    text-align: center;
+
+                    .headingText {
+                        @include heading(55, 70);
+                    }
+
+                    .headingDescription {
+                        @include description(15, #9a9a9a);
+                    }
+                }
+            }
+        }
+
+        .section1 {
+            .mainWrapper {
+                @extend %mainWrapper;
+
+                @include flex-box;
+
+                justify-content: space-between;
+                padding: 7% 0;
+
+                .section1Card {
+                    flex-basis: 24%;
+                    word-break: break-word;
+                    padding: 0px;
+                    background: inherit;
+
+                    .section1heading {
+                        font-size: px-to-em(22);
+                        margin-bottom: 30px;
+                        color: #7994d3;
+                    }
+
+                    .section1Description {
+                        font-size: px-to-em(17);
+                        margin-bottom: 30px;
+                        color: #a0a4a4;
+                    }
+
+                    .section1Button {
+                        @extend %button;
+                    }
+                }
+
+                .section1VerticalLine {
+                    @extend %verticalLine;
+                }
+            }
+        }
+
+        .section2 {
+            background: #5385c1;
+
+            .mainWrapper {
+                @extend %layout;
+
+                .section2Heading {
+                    @include heading(40, 50, 8);
+                }
+
+                .section2Description {
+                    @include description(14, #a3c8dc);
+                }
+
+                .section2Cards {
+                    margin-top: 7%;
+
+                    @include flex-box;
+
+                    justify-content: space-between;
+
+                    .section2Card {
+                        padding: 40px 30px;
+                        border: 0.1px solid white;
+
+                        .section2CardImage {
+                            img {
+                                border-radius: 50%;
+                            }
+                        }
+
+                        .section2CardHeading {
+                            padding-top: 30px;
+                            font-size: 16px;
+                            font-weight: bold;
+                            color: white;
+                        }
+
+                        .section2CardDescription {
+                            padding-top: 10px;
+
+                            @include description(12, #a3c8dc);
+                        }
+                    }
+                }
+            }
+        }
+
+        .section3 {
+            .mainWrapper {
+                @extend %layout;
+
+                .section3Heading {
+                    @include heading(40, 50, 8, #5385c1);
+                }
+
+                .section3Description {
+                    @include description(14, #9a9a9a);
+                }
+
+                .section3Cards {
+                    text-align: left;
+                    margin-top: 7%;
+
+                    @include flex-box;
+
+                    justify-content: space-between;
+
+                    // overflow: hidden;
+
+                    .section3Card {
+                        box-sizing: border-box;
+                        flex-basis: 47%;
+
+                        .section3CardImage {
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .section3CardHeading {
+                            padding-top: 30px;
+                            font-size: 20px;
+                            color: #5385c1;
+                        }
+
+                        .section3CardDescription {
+                            padding-top: 30px;
+                            padding-bottom: 30px;
+
+                            @include description(15, #9a9a9a);
+                        }
+                    }
+
+                    .section3Button {
+                        @extend %button;
+                    }
+                }
+            }
+        }
+
+        .mainWrapper {
+            @extend %mainWrapper;
+
+            .section3AfterHorizontalLine {
+                @extend %horizontalLine;
+            }
+        }
+
+        .mainFooter {
+            .mainWrapper {
+                @extend %mainWrapper;
+
+                padding-top: 30px;
+                padding-bottom: 30px;
+
+                .subFooter {
+                    @include flex-box;
+
+                    .footerLeft {
+                        a {
+                            text-decoration: none;
+
+                            @include description(12, #9a9a9a);
+                        }
+                    }
+
+                    .footerRight {
+                        @include flex-box;
+
+                        justify-content: flex-end;
+
+                        a {
+                            margin-left: 20px;
+
+                            i {
+                                color: #5888c3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

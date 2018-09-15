@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,400");
+body .main .mainHeader {
+  /* The image used */
+  background-image: url("../images/banner.jpg");
+  /* Set a specific height */
+  height: 450px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .main .section2 .mainWrapper, body .main .section3 .mainWrapper, body .main .mainHeader .mainWrapper, body .main .section1 .mainWrapper, body .main .mainWrapper, body .main .mainFooter .mainWrapper {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+body .main .section1 .mainWrapper .section1VerticalLine {
+  border: 0.3px solid #a0a4a4;
+  height: 209px;
+}
+
+body .main .mainWrapper .section3AfterHorizontalLine {
+  border: 1px solid #a0a4a4;
+  width: 100%;
+}
+
+body .main .section2 .mainWrapper, body .main .section3 .mainWrapper, body .main .mainHeader .mainWrapper .mainNav {
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+body .main .section2 .mainWrapper, body .main .section3 .mainWrapper {
+  text-align: center;
+}
+
+body .main .section1 .mainWrapper .section1Card .section1Button a button, body .main .section3 .mainWrapper .section3Cards .section3Button a button {
+  background-color: #5888c3;
+  font-size: 1em;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Raleway', sans-serif, Arial, Helvetica !important;
+  font-weight: 300;
+  line-height: 5;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body .main .mainHeader .mainWrapper .mainNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 0.8125em;
+}
+
+body .main .mainHeader .mainWrapper .mainNav .navLogo {
+  font-weight: 600;
+}
+
+body .main .mainHeader .mainWrapper .mainNav .navLogo a {
+  text-decoration: none;
+  color: white;
+}
+
+body .main .mainHeader .mainWrapper .mainNav .navLogo a:hover {
+  color: white;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+body .main .mainHeader .mainWrapper .mainNav .navItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body .main .mainHeader .mainWrapper .mainNav .navItems div {
+  margin-left: 1.5625em;
+}
+
+body .main .mainHeader .mainWrapper .mainNav .navItems div a {
+  text-decoration: none;
+  color: #9a9a9a;
+}
+
+body .main .mainHeader .mainWrapper .mainNav .navItems div a:hover {
+  color: white;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+body .main .mainHeader .mainWrapper .mainHeading {
+  text-align: center;
+}
+
+body .main .mainHeader .mainWrapper .mainHeading .headingText {
+  color: white;
+  font-size: 3.4375em;
+  margin-bottom: 0.5em;
+  font-weight: lighter;
+  cursor: default;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+body .main .mainHeader .mainWrapper .mainHeading .headingText:hover {
+  font-size: 4.375em;
+}
+
+body .main .mainHeader .mainWrapper .mainHeading .headingDescription {
+  color: #9a9a9a;
+  font-size: 0.9375em;
+  cursor: default;
+}
+
+body .main .section1 .mainWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 7% 0;
+}
+
+body .main .section1 .mainWrapper .section1Card {
+  -ms-flex-preferred-size: 24%;
+      flex-basis: 24%;
+  word-break: break-word;
+  padding: 0px;
+  background: inherit;
+}
+
+body .main .section1 .mainWrapper .section1Card .section1heading {
+  font-size: 1.375em;
+  margin-bottom: 30px;
+  color: #7994d3;
+}
+
+body .main .section1 .mainWrapper .section1Card .section1Description {
+  font-size: 1.0625em;
+  margin-bottom: 30px;
+  color: #a0a4a4;
+}
+
+body .main .section2 {
+  background: #5385c1;
+}
+
+body .main .section2 .mainWrapper .section2Heading {
+  color: white;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  font-weight: lighter;
+  cursor: default;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+body .main .section2 .mainWrapper .section2Heading:hover {
+  font-size: 3.125em;
+}
+
+body .main .section2 .mainWrapper .section2Description {
+  color: #a3c8dc;
+  font-size: 0.875em;
+  cursor: default;
+}
+
+body .main .section2 .mainWrapper .section2Cards {
+  margin-top: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .main .section2 .mainWrapper .section2Cards .section2Card {
+  padding: 40px 30px;
+  border: 0.1px solid white;
+}
+
+body .main .section2 .mainWrapper .section2Cards .section2Card .section2CardImage img {
+  border-radius: 50%;
+}
+
+body .main .section2 .mainWrapper .section2Cards .section2Card .section2CardHeading {
+  padding-top: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+body .main .section2 .mainWrapper .section2Cards .section2Card .section2CardDescription {
+  padding-top: 10px;
+  color: #a3c8dc;
+  font-size: 0.75em;
+  cursor: default;
+}
+
+body .main .section3 .mainWrapper .section3Heading {
+  color: #5385c1;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  font-weight: lighter;
+  cursor: default;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+body .main .section3 .mainWrapper .section3Heading:hover {
+  font-size: 3.125em;
+}
+
+body .main .section3 .mainWrapper .section3Description {
+  color: #9a9a9a;
+  font-size: 0.875em;
+  cursor: default;
+}
+
+body .main .section3 .mainWrapper .section3Cards {
+  text-align: left;
+  margin-top: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .main .section3 .mainWrapper .section3Cards .section3Card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
+}
+
+body .main .section3 .mainWrapper .section3Cards .section3Card .section3CardImage img {
+  width: 100%;
+}
+
+body .main .section3 .mainWrapper .section3Cards .section3Card .section3CardHeading {
+  padding-top: 30px;
+  font-size: 20px;
+  color: #5385c1;
+}
+
+body .main .section3 .mainWrapper .section3Cards .section3Card .section3CardDescription {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #9a9a9a;
+  font-size: 0.9375em;
+  cursor: default;
+}
+
+body .main .mainFooter .mainWrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+body .main .mainFooter .mainWrapper .subFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .main .mainFooter .mainWrapper .subFooter .footerLeft a {
+  text-decoration: none;
+  color: #9a9a9a;
+  font-size: 0.75em;
+  cursor: default;
+}
+
+body .main .mainFooter .mainWrapper .subFooter .footerRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body .main .mainFooter .mainWrapper .subFooter .footerRight a {
+  margin-left: 20px;
+}
+
+body .main .mainFooter .mainWrapper .subFooter .footerRight a i {
+  color: #5888c3;
+}
+/*# sourceMappingURL=main.css.map */
